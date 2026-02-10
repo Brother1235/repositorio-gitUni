@@ -1,1 +1,44 @@
-Hola mundo xd
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mi primera web</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, #0f172a, #1f2937);
+      color: #e5e7eb;
+    }
+    .card {
+      width: min(720px, 92vw);
+      padding: 28px;
+      border-radius: 18px;
+      background: rgba(255,255,255,.08);
+      border: 1px solid rgba(255,255,255,.12);
+      box-shadow: 0 18px 60px rgba(0,0,0,.35);
+      backdrop-filter: blur(8px);
+    }
+    h1 { margin: 0 0 8px; font-size: clamp(28px, 4vw, 44px); }
+    p { margin: 0 0 18px; opacity: .9; line-height: 1.5; }
+    button {
+      padding: 10px 14px;
+      border: 0;
+      border-radius: 12px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <h1>Hola mundo xd 👋</h1>
+    <p>Esta es mi primera página web creada desde la terminal.</p>
+    <button onclick="alert('¡Funcionó! 😄')">Probar botón</button>
+  </main>
+</body>
+</html>
