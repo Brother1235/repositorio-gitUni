@@ -1,44 +1,147 @@
 <!doctype html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Mi primera web</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      min-height: 100vh;
-      display: grid;
-      place-items: center;
-      background: linear-gradient(135deg, #0f172a, #1f2937);
-      color: #e5e7eb;
-    }
-    .card {
-      width: min(720px, 92vw);
-      padding: 28px;
-      border-radius: 18px;
-      background: rgba(255,255,255,.08);
-      border: 1px solid rgba(255,255,255,.12);
-      box-shadow: 0 18px 60px rgba(0,0,0,.35);
-      backdrop-filter: blur(8px);
-    }
-    h1 { margin: 0 0 8px; font-size: clamp(28px, 4vw, 44px); }
-    p { margin: 0 0 18px; opacity: .9; line-height: 1.5; }
-    button {
-      padding: 10px 14px;
-      border: 0;
-      border-radius: 12px;
-      cursor: pointer;
-      font-weight: 600;
-    }
-  </style>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Currículum - Sergio Axel Ramos Vazquez</title>
+
+<style>
+
+body{
+margin:0;
+font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+background: linear-gradient(135deg,#0f172a,#1f2937);
+color:#e5e7eb;
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+}
+
+.card{
+width:min(900px,95%);
+background:rgba(255,255,255,.08);
+padding:30px;
+border-radius:18px;
+border:1px solid rgba(255,255,255,.12);
+box-shadow:0 18px 60px rgba(0,0,0,.35);
+backdrop-filter:blur(8px);
+}
+
+h1{
+margin:0;
+font-size:38px;
+}
+
+.sub{
+opacity:.8;
+margin-bottom:20px;
+}
+
+.section{
+margin-top:25px;
+}
+
+.section h2{
+border-bottom:2px solid rgba(255,255,255,.2);
+padding-bottom:6px;
+margin-bottom:10px;
+}
+
+ul{
+padding-left:20px;
+line-height:1.6;
+}
+
+.contacto{
+margin-top:10px;
+font-size:15px;
+opacity:.9;
+}
+
+button{
+margin-top:20px;
+padding:10px 16px;
+border:0;
+border-radius:10px;
+font-weight:600;
+cursor:pointer;
+background:#6366f1;
+color:white;
+}
+
+button:hover{
+background:#4f46e5;
+}
+
+</style>
 </head>
+
 <body>
-  <main class="card">
-    <h1>Hola mundo xd 👋</h1>
-    <p>esta es mi pagina axel.</p>
-    <button onclick="alert('¡Funcionó! 😄')">Probar botón</button>
-  </main>
+
+<main class="card">
+
+<h1>Sergio Axel Ramos Vazquez</h1>
+<p class="sub">Estudiante de Ingeniería en Computación</p>
+
+<div class="contacto">
+📞 Teléfono: 775 159 9511 <br>
+📧 Correo: ramo.vazquez.sergio.axel@gmail.com
+</div>
+
+<div class="section">
+<h2>Perfil Profesional</h2>
+<p>
+Estudiante de Ingeniería en Computación con interés en el desarrollo web, bases de datos y
+soluciones tecnológicas. Me caracterizo por ser una persona responsable,
+con capacidad para aprender rápidamente nuevas tecnologías y trabajar en equipo.
+Tengo conocimientos en programación, diseño de páginas web y manejo de sistemas
+informáticos.
+</p>
+</div>
+
+<div class="section">
+<h2>Formación Académica</h2>
+<ul>
+<li>Ingeniería en Computación — Instituto Tecnológico (En curso)</li>
+<li>Bachillerato en Informática — Colegio de Estudios Científicos y Tecnológicos</li>
+</ul>
+</div>
+
+<div class="section">
+<h2>Conocimientos Técnicos</h2>
+<ul>
+<li>HTML, CSS y JavaScript</li>
+<li>Programación básica en Java</li>
+<li>Base de datos MySQL</li>
+<li>Desarrollo de páginas web</li>
+<li>Manejo de WampServer</li>
+<li>Diseño básico de interfaces web</li>
+</ul>
+</div>
+
+<div class="section">
+<h2>Experiencia</h2>
+<ul>
+<li>Desarrollo de páginas web para proyectos escolares.</li>
+<li>Creación de sistemas básicos de registro con base de datos.</li>
+<li>Diseño de interfaces web para catálogos de productos.</li>
+</ul>
+</div>
+
+<div class="section">
+<h2>Habilidades</h2>
+<ul>
+<li>Trabajo en equipo</li>
+<li>Resolución de problemas</li>
+<li>Aprendizaje rápido de nuevas tecnologías</li>
+<li>Responsabilidad y organización</li>
+</ul>
+</div>
+
+<button onclick="window.print()">Descargar / Imprimir CV</button>
+
+</main>
+
 </body>
 </html>
