@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CV - Axel Ramos</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<style>
+:root {
+    --dark-blue: #2c3e50;
+    --light-gray: #f4f4f4;
+    --text-gray: #555;
+    --accent-blue: #34495e;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ddd;
+    display: flex;
+    justify-content: center;
+}
+
+.cv-container {
+    width: 210mm;
+    min-height: 297mm;
+    background-color: white;
+    display: flex;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+/* Sidebar izquierda */
+.sidebar {
+    width: 35%;
+    background-color: var(--light-gray);
+    padding: 40px 20px;
+    color: var(--dark-blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 5px solid white;
+    object-fit: cover;
+    background-color: #ccc;
+}
+
+.sidebar h3 {
+    width: 100%;
+    border-bottom: 2px solid var(--dark-blue);
+    padding-bottom: 5px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.sidebar ul li {
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.contact-info p {
+    font-size: 0.85rem;
+    margin: 8px 0;
+    display: flex;
+    align-items: center;
+}
+
+.contact-info i {
+    margin-right: 10px;
+    width: 20px;
+    text-align: center;
+}
+
+/* Contenido principal */
+.main-content {
+    width: 65%;
+    padding: 0;
+}
+
+.header-banner {
+    background-color: var(--dark-blue);
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+.header-banner h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.header-banner p {
+    margin: 5px 0 0;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.content-padding {
+    padding: 30px 40px;
+}
+
+.section {
+    margin-bottom: 25px;
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    color: var(--dark-blue);
+    text-transform: uppercase;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.section-title i {
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+.job-item {
+    margin-bottom: 15px;
+}
+
+.job-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    color: #333;
+}
+
+.job-title {
+    font-style: italic;
+    color: var(--text-gray);
+    margin-bottom: 5px;
+}
+
+.main-content ul {
+    padding-left: 20px;
+    color: var(--text-gray);
+    font-size: 0.9rem;
+}
+
+.main-content ul li {
+    margin-bottom: 5px;
+}
+
+p.profile-text {
+    font-size: 0.9rem;
+    color: var(--text-gray);
+    line-height: 1.6;
+    text-align: justify;
+}
+
+@media print {
+    body { background: none; }
+    .cv-container { box-shadow: none; }
+}
+</style>
+</head>
+<body>
+
+<div class="cv-container">
+
+    <aside class="sidebar">
+        <div class="profile-img-container">
+            <img src="cv1.png" alt="Axel Ramos" class="profile-img">
+        </div>
+
+        <div class="contact-info">
+            <h3>Contacto</h3>
+            <p><i class="fas fa-phone"></i> 775 159 95 11</p>
+            <p><i class="fas fa-envelope"></i> axelramos4736@gmail.com</p>
+            <p><i class="fas fa-map-marker-alt"></i> Santiago Cuaula, Calpulalpan, Tlaxcala, México</p>
+            <p><i class="fas fa-globe"></i> www.reallygreatsite.com</p>
+        </div>
+
+        <h3>Habilidades</h3>
+        <ul>
+            <li>Programador Front-End y Back-End</li>
+            <li>Manejo de bases de datos</li>
+            <li>Resolución de problemas</li>
+            <li>Manejo de herramientas de desarrollo</li>
+            <li>Trabajo en equipo</li>
+            <li>Comunicación asertiva</li>
+            <li>Organización y responsabilidad</li>
+            <li>Entrega de trabajos en tiempo y forma</li>
+        </ul>
+
+        <h3>Idiomas</h3>
+        <ul>
+            <li>Español: Nativo</li>
+            <li>Inglés: Nivel A2</li>
+        </ul>
+
+        <h3>Intereses</h3>
+        <ul>
+            <li>Aprender nuevas tecnologías</li>
+            <li>Desarrollo de software</li>
+            <li>Innovación</li>
+            <li>Mejora continua</li>
+        </ul>
+
+        <h3>Softwares</h3>
+        <ul>
+            <li>Visual Studio Code</li>
+            <li>IntelliJ IDEA</li>
+            <li>Android Studio</li>
+            <li>WAMP Server</li>
+            <li>Git y GitHub</li>
+        </ul>
+
+        <h3>Certificaciones</h3>
+        <ul>
+            <li>Programación básica en Python</li>
+            <li>Programación básica en Java</li>
+            <li>Desarrollo web con HTML5</li>
+        </ul>
+    </aside>
+
+    <main class="main-content">
+        <header class="header-banner">
+            <h1>Axel Ramos</h1>
+            <p>ING. EN COMPUTACIÓN</p>
+        </header>
+
+        <div class="content-padding">
+
+            <section class="section">
+                <div class="section-title">
+                    <i class="fas fa-user"></i>
+                    <h2>Perfil Profesional</h2>
+                </div>
+                <p class="profile-text">
+                    Programador Junior con conocimientos en desarrollo Front-End y Back-End, así como en manejo de bases de datos. Enfocado en la creación de sistemas funcionales. Destaco por mi capacidad de resolución de problemas, organización y cumplimiento de lineamientos. Busco seguir desarrollando mis habilidades y adquirir experiencia profesional en el área de tecnología.
+                </p>
+            </section>
+
+            <section class="section">
+                <div class="section-title">
+                    <i class="fas fa-briefcase"></i>
+                    <h2>Experiencia Laboral</h2>
+                </div>
+
+                <div class="job-item">
+                    <div class="job-header">
+                        <span>Proyectos Académicos</span>
+                        <span>2023 - 2024</span>
+                    </div>
+                    <div class="job-title">Programador</div>
+                    <ul>
+                        <li>Desarrollo de aplicaciones web utilizando React, HTML, CSS, JavaScript y Bootstrap.</li>
+                        <li>Implementación de backend con Java 17(Spring Boot) y PHP, APIs REST y bases de datos MySQL.</li>
+                        <li>Optimización de código y resolución de problemas con herramientas como IntelliJ, VS Code y Android Studio.</li>
+                    </ul>
+                </div>
+
+                <div class="job-item">
+                    <div class="job-header">
+                        <span>Desarrollo de Sistemas Web</span>
+                        <span>2024 - 2025</span>
+                    </div>
+                    <div class="job-title">Programador</div>
+                    <ul>
+                        <li>Creación de sistemas web completos, incluyendo diseño de interfaz, lógica del sistema y conexión con bases de datos.</li>
+                        <li>Organización y estructuración de proyectos siguiendo lineamientos técnicos establecidos.</li>
+                    </ul>
+                </div>
+
+                <div class="job-item">
+                    <div class="job-header">
+                        <span>Proyectos de Programación</span>
+                        <span>2026 - Actualmente</span>
+                    </div>
+                    <div class="job-title">Programador Junior</div>
+                    <ul>
+                        <li>Desarrollo de aplicaciones básicas en Python y Java, y prácticas en desarrollo móvil con Android Studio.</li>
+                        <li>Aplicación de buenas prácticas de programación y enfoque en la calidad del código.</li>
+                    </ul>
+                </div>
+
+            </section>
+
+            <section class="section">
+                <div class="section-title">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h2>Educación Previa</h2>
+                </div>
+                <div class="job-item">
+                    <div class="job-header">
+                        <span>Universidad Autónoma de Tlaxcala</span>
+                        <span>2022 - 2026</span>
+                    </div>
+                    <p style="margin: 5px 0;">Campus Calpulalpan</p>
+                    <div class="job-title">Ingeniería en Computación</div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+</div>
+</body>
+</html>
